@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title><%= title %></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Titillium Web', sans-serif;
+      scroll-behavior: smooth;
+    }
+    
+    /* Active nav link style */
+    .nav-link.active {
+      color: #facc15;
+      font-weight: 600;
+    }
+    
+    /* Smooth scroll offset for fixed header */
+    html {
+      scroll-padding-top: 80px;
+    }
+    
+    /* Hamburger menu for mobile */
+    .hamburger {
+      cursor: pointer;
+      width: 24px;
+      height: 24px;
+      transition: all 0.25s;
+      position: relative;
+    }
+    
+    .hamburger-top,
+    .hamburger-middle,
+    .hamburger-bottom {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 24px;
+      height: 2px;
+      background: #848181;
+      transform: rotate(0);
+      transition: all 0.5s;
+    }
+    
+    .hamburger-middle {
+      transform: translateY(7px);
+    }
+    
+    .hamburger-bottom {
+      transform: translateY(14px);
+    }
+    
+    .open .hamburger-top {
+      transform: rotate(45deg) translateY(6px) translate(6px);
+    }
+    
+    .open .hamburger-middle {
+      display: none;
+    }
+    
+    .open .hamburger-bottom {
+      transform: rotate(-45deg) translateY(6px) translate(-6px);
+    }
+  </style>
+</head>
+<body class="bg-black-950 text-black-100 overflow-x-hidden">
+
+<!-- Navbar -->
+<nav class="fixed top-0 left-0 w-full z-50 bg-black bg-opacity-90 backdrop-blur-md border-b border-gray-800 shadow-md">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+    <!-- Logo -->
+    <div class="text-yellow-400 text-xl font-bold tracking-wide">Ramadani</div>
+
+    <!-- Desktop Nav -->
+    <div class="hidden md:flex space-x-6 items-center">
+      <a href="/" class="nav-link text-gray-100 hover:text-yellow-400 transition duration-300">Back to Home</a>
+    </div>
+
+    <!-- Mobile Hamburger -->
+    <div id="menu-btn" class="hamburger md:hidden">
+      <div class="hamburger-top"></div>
+      <div class="hamburger-middle"></div>
+      <div class="hamburger-bottom"></div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="menu" class="hidden flex-col md:hidden bg-black px-6 py-4 space-y-4 border-t border-gray-800">
+    <a href="/" class="nav-link block text-gray-100 hover:text-yellow-400 transition duration-300">Back to Home</a>
+  </div>
+</nav>
+
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+    
+    menuBtn.addEventListener('click', () => {
+      menuBtn.classList.toggle('open');
+      menu.classList.toggle('hidden');
+      menu.classList.toggle('flex');
+    });
+    
+    // Close mobile menu when clicking a link
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (menu.classList.contains('flex')) {
+          menuBtn.classList.remove('open');
+          menu.classList.add('hidden');
+          menu.classList.remove('flex');
+        }
+      });
+    });
+    
+    // Highlight active nav link on scroll
+    const sections = document.querySelectorAll('section');
+    const navItems = document.querySelectorAll('.nav-link');
+    
+    window.addEventListener('scroll', () => {
+      let current = '';
+      
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        
+        if (pageYOffset >= (sectionTop - 150)) {
+          current = section.getAttribute('id');
+        }
+      });
+      
+      navItems.forEach(item => {
+        item.classList.remove('active');
+        if (item.getAttribute('href') === `#${current}`) {
+          item.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

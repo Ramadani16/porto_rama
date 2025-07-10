@@ -1,0 +1,559 @@
+<%- include('partials/header', { title: 'Ramadani - Web Developer' }) %>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<!-- Di dalam <head> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<!-- HERO SECTION -->
+<section id="home" class="min-h-screen flex items-center px-6 md:px-12 pt-10 md:pt-0 bg-gradient-to-br from-gray-900 to-gray-800 text-gray-100 relative overflow-x-hidden">
+  <!-- Background pattern -->
+   <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+  <!-- Background pattern -->
+  <div class="absolute top-0 left-0 w-full h-full opacity-10">
+    <div class="w-full h-full bg-[url('/images/grid.svg')] bg-cover"></div>
+  </div>
+
+  <!-- Animated circles -->
+  <div class="absolute -right-20 -top-20 w-64 h-64 rounded-full bg-yellow-400 opacity-10 mix-blend-screen animate-blob animation-delay-2000"></div>
+  <div class="absolute -left-20 -bottom-20 w-72 h-72 rounded-full bg-yellow-600 opacity-10 mix-blend-screen animate-blob"></div>
+</div>
+
+</div>
+
+
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center py-16 relative z-10">
+    <!-- Teks -->
+    <div data-aos="fade-right" class="space-y-4">
+      <div class="inline-block px-4 py-1 bg-gray-800 rounded-full border border-yellow-400/30 mb-2">
+        <span class="text-yellow-400 text-sm font-medium">Web Developer</span>
+      </div>
+      <h1 class="text-4xl md:text-6xl font-bold text-white">
+        Hi, I'm <span class="text-yellow-400">Ramadani</span>
+      </h1>
+      <h2 class="text-xl md:text-2xl text-gray-300 mt-2 font-light">
+        <span id="typing" class="text-yellow-300"></span>
+      </h2>
+
+
+      <p class="mt-4 text-gray-400 leading-relaxed max-w-lg text-lg">
+        Specializing in modern web applications with focus on performance, accessibility, and clean design.
+      </p>
+      <div class="flex flex-wrap gap-4 mt-8">
+        <a href="#projects" class="inline-flex items-center bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-semibold px-6 py-3 rounded-full transition-all shadow-lg hover:shadow-yellow-400/30 hover:-translate-y-1">
+          View Projects
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </a>
+        <a href="#contact" class="inline-flex items-center border-2 border-yellow-400/50 hover:border-yellow-400 text-yellow-400 font-semibold px-6 py-3 rounded-full transition-all hover:bg-yellow-400/10">
+          Contact Me
+        </a>
+      </div>
+      
+      <div class="flex gap-4 mt-8">
+        <!-- GitHub -->
+        <a href="https://github.com/Ramadani16" target="_blank" class="text-gray-400 hover:text-yellow-400 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="#" class="text-gray-400 hover:text-yellow-400 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/rma_dani16?igsh=ZHN6enVvZG8xcG41" target="_blank" class="text-gray-400 hover:text-yellow-400 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Foto -->
+    <div class="flex justify-center md:justify-end" data-aos="zoom-in">
+      <div class="relative group">
+        <div class="absolute -inset-2 bg-yellow-400/30 rounded-full blur-md group-hover:opacity-100 opacity-70 transition-all duration-300 animate-tilt"></div>
+        <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl border-4 border-yellow-400 hover:scale-105 transition duration-500 group-hover:shadow-yellow-400/40">
+          <img src="/images/foto2.jpg" alt="Foto Ramadani" class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition duration-500">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="min-h-[70vh] px-6 py-20 bg-gray-900 text-gray-300">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-16" data-aos="fade-up">
+      <h2 class="text-4xl font-bold text-white mb-4 relative inline-block">
+        <span class="relative">
+          About Me
+          <span class="absolute -bottom-2 left-0 w-full h-1 bg-yellow-400 rounded-full"></span>
+        </span>
+      </h2>
+      <p class="text-gray-400 max-w-2xl mx-auto text-lg">
+        Get to know more about my skills, experience, and what I can bring to your project
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div data-aos="fade-right">
+        <h3 class="text-2xl font-bold text-white mb-6">Tentang Saya</h3>
+        <p class="text-gray-400 leading-relaxed mb-4">
+        Saya adalah seorang web developer yang antusias dengan pengalaman lebih dari 2 tahun dalam membangun aplikasi web. Fokus saya adalah menciptakan pengalaman digital yang bersih, efisien, dan ramah pengguna.
+        </p>
+        <p class="text-gray-400 leading-relaxed">
+            Di luar aktivitas ngoding, saya senang terlibat dalam proyek open-source, belajar hal-hal baru di dunia teknologi, dan berbagi pengetahuan dengan sesama developer.
+        </p>
+      </div>
+
+      <div data-aos="fade-left">
+        <h3 class="text-2xl font-bold text-white mb-6">My Skills</h3>
+        <div class="space-y-4">
+          <div>
+            <div class="flex justify-between mb-1">
+              <span class="text-gray-300 font-medium">php, Laravel</span>
+              <span class="text-yellow-400">75%</span>
+            </div>
+            <div class="w-full bg-gray-800 rounded-full h-2">
+              <div class="bg-yellow-400 h-2 rounded-full" style="width: 75%"></div>
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-between mb-1">
+              <span class="text-gray-300 font-medium">Node.js</span>
+              <span class="text-yellow-400">70%</span>
+            </div>
+            <div class="w-full bg-gray-800 rounded-full h-2">
+              <div class="bg-yellow-400 h-2 rounded-full" style="width: 70%"></div>
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-between mb-1">
+              <span class="text-gray-300 font-medium">Microsoft Office</span>
+              <span class="text-yellow-400">80%</span>
+            </div>
+            <div class="w-full bg-gray-800 rounded-full h-2">
+              <div class="bg-yellow-400 h-2 rounded-full" style="width: 80%"></div>
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-between mb-1">
+              <span class="text-gray-300 font-medium">Database Design</span>
+              <span class="text-yellow-400">75%</span>
+            </div>
+            <div class="w-full bg-gray-800 rounded-full h-2">
+              <div class="bg-yellow-400 h-2 rounded-full" style="width: 75%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="px-6 py-20 bg-gray-800 text-gray-300">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-16" data-aos="fade-up">
+      <h2 class="text-4xl font-bold text-white mb-4 relative inline-block">
+        <span class="relative">
+          Projects
+          <span class="absolute -bottom-2 left-0 w-full h-1 bg-yellow-400 rounded-full"></span>
+        </span>
+      </h2>
+      <p class="text-gray-400 max-w-2xl mx-auto text-lg">
+        Di bawah ini merupakan hasil projek eksperimen saya
+      </p>
+    </div>
+
+    <!-- Swiper Container -->
+    <div class="swiper mySwiper" data-aos="fade-up">
+      <div class="swiper-wrapper">
+
+        <!-- Card Project 1 -->
+        <div class="swiper-slide bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-700 hover:shadow-yellow-400/20 hover:border-yellow-400/50 transition-all duration-300 group">
+          <div class="mb-4 overflow-hidden rounded-lg">
+<img src="/images/spk.png" alt="spk" class="w-full h-48 object-contain group-hover:scale-105 transition duration-500">
+          </div>
+          <h3 class="text-xl font-bold text-white">SPK Startup</h3>
+          <p class="text-gray-400 mt-2 text-sm">Aplikasi multi user, metode MOORA, register & dashboard login.</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="px-2 py-1 bg-gray-800 text-yellow-300 text-xs rounded-full">PHP</span>
+            <span class="px-2 py-1 bg-gray-800 text-yellow-300 text-xs rounded-full">Bootstrap</span>
+            <span class="px-2 py-1 bg-gray-800 text-yellow-300 text-xs rounded-full">JavaScript</span>
+          </div>
+        </div>
+
+        <!-- Card Project 2 -->
+        <div class="swiper-slide bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-700 hover:shadow-yellow-400/20 hover:border-yellow-400/50 transition-all duration-300 group">
+          <div class="mb-4 overflow-hidden rounded-lg">
+            <img src="/images/porto.png" alt="Portfolio" class="w-full h-48 object-contain group-hover:scale-105 transition duration-500">
+          </div>
+          <h3 class="text-xl font-bold text-white">Portfolio Website</h3>
+          <p class="text-gray-400 mt-2 text-sm">Website portfolio modern dengan Tailwind & animasi halus.</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="px-2 py-1 bg-gray-800 text-yellow-300 text-xs rounded-full">Node.js</span>
+            <span class="px-2 py-1 bg-gray-800 text-yellow-300 text-xs rounded-full">Tailwind</span>
+          </div>
+        </div>
+
+        <!-- Card Project 3 -->
+        <div class="swiper-slide bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-700 hover:shadow-yellow-400/20 hover:border-yellow-400/50 transition-all duration-300 group">
+          <div class="mb-4 overflow-hidden rounded-lg">
+            <img src="/images/store.png" alt="Store" class="w-full h-48 object-contain group-hover:scale-105 transition duration-500">
+          </div>
+          <h3 class="text-xl font-bold text-white">Commerce Store</h3>
+          <p class="text-gray-400 mt-2 text-sm">Toko online sederhana, admin kelola produk, checkout via WA.</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="px-2 py-1 bg-gray-800 text-yellow-300 text-xs rounded-full">PHP</span>
+            <span class="px-2 py-1 bg-gray-800 text-yellow-300 text-xs rounded-full">Bootstrap 5</span>
+            <span class="px-2 py-1 bg-gray-800 text-yellow-300 text-xs rounded-full">JavaScript</span>
+          </div>
+        </div>
+
+         <div class="swiper-slide bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-700 hover:shadow-yellow-400/20 hover:border-yellow-400/50 transition-all duration-300 group">
+          <div class="mb-4 overflow-hidden rounded-lg">
+            <img src="/images/rme.png" alt="Store" class="w-full h-48 object-contain group-hover:scale-105 transition duration-500">
+          </div>
+          <h3 class="text-xl font-bold text-white">Rekam Medis</h3>
+          <p class="text-gray-400 mt-2 text-sm">Aplikasi rekam Medis Elektronik berbasis web dua roll akses admin dan dokter</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="px-2 py-1 bg-gray-800 text-yellow-300 text-xs rounded-full">PHP</span>
+            <span class="px-2 py-1 bg-gray-800 text-yellow-300 text-xs rounded-full">Bootstrap 5</span>
+            <span class="px-2 py-1 bg-gray-800 text-yellow-300 text-xs rounded-full">JavaScript</span>
+          </div>
+        </div>
+        
+
+      </div>
+
+      <!-- Pagination & Navigation -->
+      <div class="swiper-pagination mt-6"></div>
+    </div>
+
+    <!-- Tombol -->
+    <div class="text-center mt-16">
+      <a href="/projects" class="inline-flex items-center border-2 border-yellow-400/50 hover:border-yellow-400 text-yellow-400 font-semibold px-8 py-3 rounded-full transition-all hover:bg-yellow-400/10">
+        View All Projects
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="min-h-[60vh] px-6 py-20 bg-gray-900 text-gray-300">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-16" data-aos="fade-up">
+      <h2 class="text-4xl font-bold text-white mb-4 relative inline-block">
+        <span class="relative">
+          Get In Touch
+          <span class="absolute -bottom-2 left-0 w-full h-1 bg-yellow-400 rounded-full"></span>
+        </span>
+      </h2>
+      <p class="text-gray-400 max-w-2xl mx-auto text-lg">
+        Mau buat Aplikasi atau Website hubungi kontak dibawah !!!
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-12">
+      <div data-aos="fade-right">
+        <h3 class="text-2xl font-bold text-white mb-6">Kontak</h3>
+        <div class="space-y-4">
+          <div class="flex items-start">
+            <div class="flex-shrink-0 text-yellow-400 mt-1">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <div class="ml-3">
+              <p class="text-gray-400">Email</p>
+              <a href="mailto:rmadani@gmail.com" class="text-yellow-300 hover:text-yellow-200 transition">rmadani@gmail.com</a>
+            </div>
+          </div>
+          
+          <div class="flex items-start">
+            <div class="flex-shrink-0 text-yellow-400 mt-1">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <div class="ml-3">
+              <p class="text-gray-400">Lokasi</p>
+              <p class="text-yellow-300">Serang-Banten, Indonesia</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8">
+          <h4 class="text-xl font-bold text-white mb-4">Follow Me</h4>
+          <div class="flex space-x-4">
+            <a href="https://github.com/Ramadani16" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:text-yellow-400 hover:bg-gray-700 transition">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:text-yellow-400 hover:bg-gray-700 transition">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            
+            <a href="https://www.instagram.com/rma_dani16?igsh=ZHN6enVvZG8xcG41" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:text-yellow-400 hover:bg-gray-700 transition">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+     <div data-aos="fade-left">
+      <form id="contactForm"  class="space-y-6">
+        <div>
+          <label for="name" class="block text-sm font-medium text-gray-400 mb-1">Nama</label>
+          <input name="name" type="text" id="name" required
+            class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent text-white placeholder-gray-500 transition"
+            placeholder="Nama">
+        </div>
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-400 mb-1">Email</label>
+          <input name="email" type="email" id="email" required
+            class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent text-white placeholder-gray-500 transition"
+            placeholder="email@example.com">
+        </div>
+        <div>
+          <label for="subject" class="block text-sm font-medium text-gray-400 mb-1">Project</label>
+          <input name="subject" type="text" id="subject"
+            class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent text-white placeholder-gray-500 transition"
+            placeholder="Project Apa Yang Mau dibuat">
+        </div>
+        <div>
+          <label for="message" class="block text-sm font-medium text-gray-400 mb-1">Pesan</label>
+          <textarea name="message" id="message" rows="4"
+            class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent text-white placeholder-gray-500 transition"
+            placeholder="Jelaskan detail projectmu..."></textarea>
+        </div>
+        <button id="submitBtn" type="submit"
+        class="w-full bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-bold px-6 py-3 rounded-lg transition shadow-md hover:shadow-yellow-400/30">
+        Kirim Pesan
+      </button>
+
+      </form>
+    </div>
+
+    </div>
+    <!-- Tombol WhatsApp Melayang -->
+<!-- WA Floating Button with Slogan -->
+<div class="fixed bottom-6 right-6 flex flex-col items-end gap-2 z-50">
+  <!-- Slogan -->
+  <div class="bg-gray-900 text-white text-sm px-4 py-2 rounded-lg shadow-lg shadow-green-400/20 max-w-xs">
+    👨Hubungi Disini!
+  </div>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/6287788283841" target="_blank" aria-label="Chat via WhatsApp"
+     class="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg shadow-green-500/30 transition-all duration-300">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M20.52 3.48A11.88 11.88 0 0012 0a11.89 11.89 0 00-10.59 17.29L0 24l6.91-1.41A11.87 11.87 0 0012 24a11.88 11.88 0 0011.88-11.88 11.82 11.82 0 00-3.36-8.64zM12 21.5a9.51 9.51 0 01-4.84-1.31l-.35-.2-4.1.84.85-4-.22-.37A9.5 9.5 0 1121.5 12 9.5 9.5 0 0112 21.5zm5.39-7.13c-.29-.15-1.7-.84-1.96-.94s-.46-.15-.66.15-.75.94-.91 1.14-.34.22-.63.07a7.7 7.7 0 01-2.26-1.39 8.49 8.49 0 01-1.56-1.95c-.16-.28 0-.43.12-.59s.29-.34.43-.51.19-.29.29-.49.05-.37-.07-.51-.66-1.6-.9-2.19-.48-.51-.66-.52h-.56a1.08 1.08 0 00-.78.37 3.27 3.27 0 00-1 2.43c0 1.43 1 2.81 1.14 3 .14.18 2.15 3.3 5.22 4.62a17.58 17.58 0 001.74.64 4.16 4.16 0 001.91.12 3.14 3.14 0 002.07-1.45 2.58 2.58 0 00.18-1.45c-.07-.13-.26-.2-.55-.35z"/>
+    </svg>
+  </a>
+</div>
+
+  </div>
+
+  
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 border-t border-gray-800 text-gray-400 py-8">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="flex flex-col justify-center items-center text-center">
+      <p>&copy; <span id="year"></span> Ramadani. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+<!-- Animate on Scroll -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({ duration: 800, once: true });</script>
+
+<!-- Custom animations and styles -->
+<style>
+  html {
+  scroll-behavior: smooth;
+}
+
+  @keyframes blob {
+    0% {
+      transform: translate(0px, 0px) scale(1);
+    }
+    33% {
+      transform: translate(30px, -50px) scale(1.1);
+    }
+    66% {
+      transform: translate(-20px, 20px) scale(0.9);
+    }
+    100% {
+      transform: translate(0px, 0px) scale(1);
+    }
+  }
+  
+
+
+ html, body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+  
+
+  /* Smooth transitions */
+  .transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+  }
+
+  /* Project card hover effect */
+  .group:hover .group-hover\:shadow-yellow-400\/40 {
+    --tw-shadow-color: rgba(250, 204, 21, 0.4);
+    --tw-shadow: var(--tw-shadow-colored);
+  }
+
+  /* Gradient text for potential future use */
+  .text-gradient {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #facc15, #f59e0b);
+  }
+   .animate-blob {
+    animation: blob 7s infinite;
+  }
+  
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<script>
+  const form = document.getElementById('contactForm');
+  const submitBtn = document.getElementById('submitBtn');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault(); // Hindari reload halaman
+
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+
+    // Ubah tombol jadi loading
+    submitBtn.disabled = true;
+    const originalText = submitBtn.innerText;
+    submitBtn.innerText = "Mengirim...";
+
+    try {
+      const response = await fetch('/kirim-pesan', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      });
+
+      if (response.ok) {
+        showToast('Pesan berhasil dikirim!');
+        form.reset();
+      } else {
+        showToast('Gagal mengirim pesan. Coba lagi nanti.', true);
+      }
+    } catch (error) {
+      console.error(error);
+      showToast('Terjadi kesalahan saat mengirim pesan.', true);
+    } finally {
+      // Balikkan tombol seperti semula
+      submitBtn.disabled = false;
+      submitBtn.innerText = originalText;
+    }
+  });
+
+  function showToast(message, isError = false) {
+    const toast = document.createElement('div');
+    toast.className = `fixed bottom-6 right-6 z-50 px-4 py-3 rounded-lg text-white shadow-lg transition-opacity opacity-0 ${
+      isError ? 'bg-red-600' : 'bg-green-600'
+    }`;
+    toast.innerText = message;
+    document.body.appendChild(toast);
+
+    // Muncul pelan
+    setTimeout(() => toast.classList.add('opacity-100'), 100);
+
+    // Hilang pelan
+    setTimeout(() => {
+      toast.classList.remove('opacity-100');
+      setTimeout(() => toast.remove(), 500);
+    }, 3000);
+  }
+</script>
+<script>
+  AOS.init({
+    once: false, // biar animasi muncul terus saat scroll
+    duration: 1000,
+  });
+</script>
+<script>
+  new Typed('#typing', {
+    strings: ['digital experiences', 'beautiful websites', 'modern web apps'],
+    typeSpeed: 50,
+    backSpeed: 30,
+    loop: true,
+    smartBackspace: true,
+  });
+</script>
+<script>
+  const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1.1,
+    spaceBetween: 20,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      }
+    }
+  });
+</script>
+
+<script>
+  // Set current year in footer
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
