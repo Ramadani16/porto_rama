@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "name": "porto-rama",
   "version": "1.0.0",
   "description": "Website portofolio pribadi menggunakan Node.js dan Express",
   "main": "app.js",
